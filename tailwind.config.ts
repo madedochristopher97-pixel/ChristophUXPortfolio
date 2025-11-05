@@ -19,9 +19,9 @@ const config: Config = {
             muted: '#737373',
           },
           accent: {
-            primary: '#3b82f6',
-            secondary: '#8b5cf6',
-            hover: '#2563eb',
+            primary: '#dc2626',
+            secondary: '#991b1b',
+            hover: '#b91c1c',
           }
         }
       },

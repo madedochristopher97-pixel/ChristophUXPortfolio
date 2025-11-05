@@ -43,8 +43,12 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#about" className="text-xl font-bold text-dark-text-primary hover:text-dark-accent-primary transition-colors">
-              AP
+            <a href="#about" className="flex items-center hover:opacity-80 transition-opacity">
+              <img 
+                src="/images/logo.png" 
+                alt="Christopher Madedo UX" 
+                className="h-10 w-auto"
+              />
             </a>
           </div>
 
