@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ffffff;
+  --surface: #1a1a1a;
+  --border: #2a2a2a;
+  --text-secondary: #a3a3a3;
+  --text-muted: #737373;
+  --accent-primary: #3b82f6;
+  --accent-secondary: #8b5cf6;
+  --accent-hover: #2563eb;
+}
+
+@theme inline {
+  --color-dark-bg: #0a0a0a;
+  --color-dark-surface: #1a1a1a;
+  --color-dark-border: #2a2a2a;
+  --color-dark-text-primary: #ffffff;
+  --color-dark-text-secondary: #a3a3a3;
+  --color-dark-text-muted: #737373;
+  --color-dark-accent-primary: #3b82f6;
+  --color-dark-accent-secondary: #8b5cf6;
+  --color-dark-accent-hover: #2563eb;
+  
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-geist-mono);
+  
+  --animate-fade-in: fadeIn 0.5s ease-in-out;
+  --animate-slide-up: slideUp 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+* {
+  scroll-margin-top: 80px;
+}
